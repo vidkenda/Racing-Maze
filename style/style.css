@@ -1,6 +1,5 @@
 * {
     margin: auto;
-    overflow-x: hidden;
     overflow: hidden;
 }
 
@@ -16,26 +15,22 @@
     top: 5%;
     width: 48%;
     left: 32%;
-    z-index: 2;
 }
 
 #finish {
     position: absolute;
     top: 76%;
-    z-index: 2;
     left: 48%;
     width: 5%;
 }
 #ferrari{
     position: absolute;
-    z-index: 2;
     top: 50%;
     left: 2%;
     width: 28%;
 }
 #lambo{
     position: absolute;
-    z-index: 2;
     height: 36%;
     top:45%;
     left:68%;
