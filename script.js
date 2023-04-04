@@ -1,0 +1,354 @@
+var canvas=document.getElementById('canvas');
+var ctx=canvas.getContext('2d');
+ctx.scale(2,2);
+
+function maze(){
+ctx.beginPath();
+		ctx.lineCap="square";
+		ctx.lineWidth=2;
+		ctx.moveTo(0,0);
+		ctx.lineTo(114,0);
+		ctx.moveTo(130,0);
+		ctx.lineTo(242,0);
+		ctx.moveTo(66,18);
+		ctx.lineTo(114,18);
+		ctx.moveTo(162,18);
+		ctx.lineTo(226,18);
+		ctx.moveTo(0,34);
+		ctx.lineTo(18,34);
+		ctx.moveTo(34,34);
+		ctx.lineTo(50,34);
+		ctx.moveTo(82,34);
+		ctx.lineTo(98,34);
+		ctx.moveTo(130,34);
+		ctx.lineTo(162,34);
+		ctx.moveTo(178,34);
+		ctx.lineTo(210,34);
+		ctx.moveTo(18,50);
+		ctx.lineTo(50,50);
+		ctx.moveTo(66,50);
+		ctx.lineTo(82,50);
+		ctx.moveTo(98,50);
+		ctx.lineTo(130,50);
+		ctx.moveTo(146,50);
+		ctx.lineTo(162,50);
+		ctx.moveTo(194,50);
+		ctx.lineTo(226,50);
+		ctx.moveTo(82,66);
+		ctx.lineTo(146,66);
+		ctx.moveTo(162,66);
+		ctx.lineTo(194,66);
+		ctx.moveTo(226,66);
+		ctx.lineTo(242,66);
+		ctx.moveTo(18,82);
+		ctx.lineTo(66,82);
+		ctx.moveTo(98,82);
+		ctx.lineTo(162,82);
+		ctx.moveTo(210,82);
+		ctx.lineTo(226,82);
+		ctx.moveTo(2,98);
+		ctx.lineTo(50,98);
+		ctx.moveTo(66,98);
+		ctx.lineTo(114,98);
+		ctx.moveTo(130,98);
+		ctx.lineTo(178,98);
+		ctx.moveTo(194,98);
+		ctx.lineTo(210,98);
+		ctx.moveTo(34,114);
+		ctx.lineTo(66,114);
+		ctx.moveTo(114,114);
+		ctx.lineTo(130,114);
+		ctx.moveTo(178,114);
+		ctx.lineTo(194,114);
+		ctx.moveTo(226,114);
+		ctx.lineTo(242,114);
+		ctx.moveTo(18,130);
+		ctx.lineTo(50,130);
+		ctx.moveTo(114,130);
+		ctx.lineTo(162,130);
+		ctx.moveTo(194,130);
+		ctx.lineTo(226,130);
+		ctx.moveTo(0,146);
+		ctx.lineTo(34,146);
+		ctx.moveTo(50,146);
+		ctx.lineTo(66,146);
+		ctx.moveTo(98,146);
+		ctx.lineTo(114,146);
+		ctx.moveTo(162,146);
+		ctx.lineTo(210,146);
+		ctx.moveTo(226,146);
+		ctx.lineTo(242,146);
+		ctx.moveTo(34,162);
+		ctx.lineTo(50,162);
+		ctx.moveTo(66,162);
+		ctx.lineTo(82,162);
+		ctx.moveTo(130,162);
+		ctx.lineTo(146,162);
+		ctx.moveTo(178,162);
+		ctx.lineTo(226,162);
+		ctx.moveTo(50,178);
+		ctx.lineTo(66,178);
+		ctx.moveTo(82,178);
+		ctx.lineTo(98,178);
+		ctx.moveTo(114,178);
+		ctx.lineTo(130,178);
+		ctx.moveTo(162,178);
+		ctx.lineTo(210,178);
+		ctx.moveTo(2,194);
+		ctx.lineTo(34,194);
+		ctx.moveTo(66,194);
+		ctx.lineTo(114,194);
+		ctx.moveTo(130,194);
+		ctx.lineTo(146,194);
+		ctx.moveTo(178,194);
+		ctx.lineTo(226,194);
+		ctx.moveTo(18,210);
+		ctx.lineTo(82,210);
+		ctx.moveTo(114,210);
+		ctx.lineTo(130,210);
+		ctx.moveTo(162,210);
+		ctx.lineTo(178,210);
+		ctx.moveTo(18,226);
+		ctx.lineTo(66,226);
+		ctx.moveTo(114,226);
+		ctx.lineTo(130,226);
+		ctx.moveTo(162,226);
+		ctx.lineTo(178,226);
+		ctx.moveTo(210,226);
+		ctx.lineTo(242,226);
+		ctx.moveTo(0,242);
+		ctx.lineTo(114,242);
+		ctx.moveTo(130,242);
+		ctx.lineTo(242,242);
+		ctx.moveTo(0,0);
+		ctx.lineTo(0,242);
+		ctx.moveTo(18,18);
+		ctx.lineTo(18,34);
+		ctx.moveTo(18,50);
+		ctx.lineTo(18,82);
+		ctx.moveTo(18,98);
+		ctx.lineTo(18,130);
+		ctx.moveTo(18,162);
+		ctx.lineTo(18,194);
+		ctx.moveTo(34,18);
+		ctx.lineTo(34,34);
+		ctx.moveTo(34,50);
+		ctx.lineTo(34,66);
+		ctx.moveTo(34,162);
+		ctx.lineTo(34,178);
+		ctx.moveTo(50,0);
+		ctx.lineTo(50,34);
+		ctx.moveTo(50,66);
+		ctx.lineTo(50,82);
+		ctx.moveTo(50,130);
+		ctx.lineTo(50,146);
+		ctx.moveTo(50,162);
+		ctx.lineTo(50,210);
+		ctx.moveTo(66,34);
+		ctx.lineTo(66,50);
+		ctx.moveTo(66,66);
+		ctx.lineTo(66,114);
+		ctx.moveTo(66,130);
+		ctx.lineTo(66,162);
+		ctx.moveTo(66,178);
+		ctx.lineTo(66,194);
+		ctx.moveTo(66,226);
+		ctx.lineTo(66,242);
+		ctx.moveTo(82,50);
+		ctx.lineTo(82,82);
+		ctx.moveTo(82,114);
+		ctx.lineTo(82,162);
+		ctx.moveTo(82,210);
+		ctx.lineTo(82,226);
+		ctx.moveTo(98,34);
+		ctx.lineTo(98,50);
+		ctx.moveTo(98,98);
+		ctx.lineTo(98,178);
+		ctx.moveTo(98,194);
+		ctx.lineTo(98,242);
+		ctx.moveTo(114,0);
+		ctx.lineTo(114,50);
+		ctx.moveTo(114,82);
+		ctx.lineTo(114,98);
+		ctx.moveTo(114,114);
+		ctx.lineTo(114,130);
+		ctx.moveTo(114,146);
+		ctx.lineTo(114,194);
+		ctx.moveTo(114,210);
+		ctx.lineTo(114,226);
+		ctx.moveTo(130,18);
+		ctx.lineTo(130,34);
+		ctx.moveTo(130,98);
+		ctx.lineTo(130,114);
+		ctx.moveTo(130,130);
+		ctx.lineTo(130,162);
+		ctx.moveTo(130,194);
+		ctx.lineTo(130,210);
+		ctx.moveTo(130,226);
+		ctx.lineTo(130,242);
+		ctx.moveTo(146,0);
+		ctx.lineTo(146,18);
+		ctx.moveTo(146,50);
+		ctx.lineTo(146,82);
+		ctx.moveTo(146,114);
+		ctx.lineTo(146,130);
+		ctx.moveTo(146,146);
+		ctx.lineTo(146,226);
+		ctx.moveTo(162,18);
+		ctx.lineTo(162,50);
+		ctx.moveTo(162,98);
+		ctx.lineTo(162,114);
+		ctx.moveTo(162,130);
+		ctx.lineTo(162,210);
+		ctx.moveTo(178,34);
+		ctx.lineTo(178,98);
+		ctx.moveTo(178,114);
+		ctx.lineTo(178,146);
+		ctx.moveTo(178,210);
+		ctx.lineTo(178,226);
+		ctx.moveTo(194,66);
+		ctx.lineTo(194,98);
+		ctx.moveTo(194,194);
+		ctx.lineTo(194,242);
+		ctx.moveTo(210,50);
+		ctx.lineTo(210,82);
+		ctx.moveTo(210,98);
+		ctx.lineTo(210,130);
+		ctx.moveTo(210,210);
+		ctx.lineTo(210,226);
+		ctx.moveTo(226,18);
+		ctx.lineTo(226,50);
+		ctx.moveTo(226,82);
+		ctx.lineTo(226,98);
+		ctx.moveTo(226,162);
+		ctx.lineTo(226,210);
+		ctx.moveTo(242,0);
+		ctx.lineTo(242,242);
+		ctx.closePath();			
+
+		ctx.strokeStyle='black';
+		ctx.stroke();
+}
+	var y = 0;
+	var x = 120;
+	var n = 1;
+	var dx = 2;
+	var dy = 2;
+	var ferrari = new Image();
+	ferrari.src="images/ferrarihorse.png";
+    
+	function drawIt() {
+		ctx.fillStyle = "red";
+		if(n==1){
+		ctx.fillRect(x,y,3,3);
+		maze();
+
+	}else if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrari, x-5, y-5, 17, 17);    
+		maze();
+	}
+	if(x==120 && y>=0 && y<=8)
+	y+=dy;
+	if(y==8 && x>=120 && x<=136)
+	x+=dx;
+	if(x==136 && y>=8 && y<=24)
+	y+=dy;
+	if(y==24 && x>=136 && x<=152)
+	x+=dx;
+	if(x==152 && y<=24 && y>=8)
+	y-=dy;
+	if(y==8 && x>=152 && x<=232)
+	x+=dx;
+	if(x==232 && y>=8 && y<=55)
+	y+=dy;
+	if(y==56 && x<=232 && x>=220)
+	x-=dx;
+	if(x==218 && y>=56 && y<=73)
+	y+=dy;
+	if(y==72 && x>=218 && x<=231)
+	x+=dx;
+	if(x==232 && y>=71 && y<=103)
+	y+=dy;
+	if(y==104 && x<=232 && x>=217)
+	x-=dx;
+	if(x==216 && y<=104 && y>=89)
+	y-=dy;
+	if(y==88 && x<=216 && x>=200)
+	x-=dx;
+	if(x==200 && y<=88 && y>=57)
+	y-=dy;
+	if(y==56 && x<=200 && x>=185)
+	x-=dx;
+	if(x==184 && y<=56 && y>=41)
+	y-=dy;
+	if(y==40 && x>=184 && x<=215)
+	x+=dx;
+	if(x==216 && y<=40 && y>=24)
+	y-=dy;
+	if(y==24 && x<=216 && x>=168)
+	x-=dx;
+	if(x==168 && y>=24 && y<=56)
+	y+=dy;
+	if(y==56 && x<=168 && x>=152)
+	x-=dx;
+	if(x==152 && y>=56 && y<=72)
+	y+=dy;
+	if(y==72 && x>=152 && x<=168)
+	x+=dx;
+	if(x==168 && y>=72 && y<=88)
+	y+=dy;
+	if(y==88 && x<=168 && x>=120)
+	x-=dx;
+	if(x==120 && y>=88 && y<=104)
+	y+=dy;
+	if(y==104 && x<=120 && x>=104)
+	x-=dx;
+	if(x==104 && y>=104 && y<=136)
+	y+=dy;
+	if(y==136 && x>=104 && x<=120)
+	x+=dx;
+	if(x==120 && y>=136 && y<=168)
+	y+=dy;
+	if(y==168 && x>=120 && x<=136)
+	x+=dx;
+	if(x==136 && y>=168 && y<=184)
+	y+=dy;
+	if(y==184 && x<=136 && x>=120)
+	x-=dx;
+	if(x==120 && y>=184 && y<=200)
+	y+=dy;
+	if(y==200 && x<=120 && x>=104)
+	x-=dx;
+	if(x==104 && y>=200 && y<=232)
+	y+=dy;
+	if(y==232 && x>=104 && x<=120)
+	x+=dx;
+	if(x==120 && y>=232 && y<=238)
+	y+=dy;
+	if(x==120&&y==238){
+		x=120;
+		y=0;
+	if(n==1){
+		n++;
+	}
+	else{
+		ctx.clearRect(x,y,4,4);    
+		n++;
+
+        Swal.fire({
+            text:'YOU WON!',
+            background:"red",
+            confirmButtonColor: 'black'
+        })
+        setTimeout(function(){
+        ctx.clearRect(100,200,1000,1000);    
+        y = 0;
+        x = 120;
+        n = 1;
+        swal.close();
+        }, 5000);
+}
+}
+}
+setInterval(drawIt, 25);
