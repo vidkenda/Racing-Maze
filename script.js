@@ -235,7 +235,7 @@ ctx.beginPath();
 	var dx = 2;
 	var dy = 2;
 	var ferrari = new Image();
-	ferrari.src="images/ferrarihorse.png";
+	ferrari.src="images/ferrari.png";
     
 	function drawIt() {
 		ctx.fillStyle = "red";
