@@ -235,7 +235,10 @@ ctx.beginPath();
 	var dx = 2;
 	var dy = 2;
 	var ferrari = new Image();
+	var ferrariMirrored=new Image();
+	var ferrari=new Image();
 	ferrari.src="images/ferrari.png";
+	ferrariMirrored.src="images/ferrariMirrored.png";
     
 	function drawIt() {
 		ctx.fillStyle = "red";
@@ -245,7 +248,7 @@ ctx.beginPath();
 
 	}else if(n==2){
 		ctx.clearRect(x-7,y-7,20,20);
-		ctx.drawImage(ferrari, x-5, y-5, 17, 17);    
+		ctx.drawImage(ferrari, x-5, y-5, 17, 17);
 		maze();
 	}
 	if(x==120 && y>=0 && y<=8)
@@ -261,49 +264,89 @@ ctx.beginPath();
 	if(y==8 && x>=152 && x<=232)
 	x+=dx;
 	if(x==232 && y>=8 && y<=55)
-	y+=dy;
-	if(y==56 && x<=232 && x>=220)
+	y+=dy;	
+	if(y==56 && x<=232 && x>=220){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==218 && y>=56 && y<=73)
 	y+=dy;
 	if(y==72 && x>=218 && x<=231)
 	x+=dx;
 	if(x==232 && y>=71 && y<=103)
 	y+=dy;
-	if(y==104 && x<=232 && x>=217)
+	if(y==104 && x<=232 && x>=217){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==216 && y<=104 && y>=89)
 	y-=dy;
-	if(y==88 && x<=216 && x>=200)
+	if(y==88 && x<=216 && x>=200){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==200 && y<=88 && y>=57)
 	y-=dy;
-	if(y==56 && x<=200 && x>=185)
+	if(y==56 && x<=200 && x>=185){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==184 && y<=56 && y>=41)
 	y-=dy;
 	if(y==40 && x>=184 && x<=215)
 	x+=dx;
 	if(x==216 && y<=40 && y>=24)
 	y-=dy;
-	if(y==24 && x<=216 && x>=168)
+	if(y==24 && x<=216 && x>=168){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==168 && y>=24 && y<=56)
 	y+=dy;
-	if(y==56 && x<=168 && x>=152)
+	if(y==56 && x<=168 && x>=152){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==152 && y>=56 && y<=72)
 	y+=dy;
 	if(y==72 && x>=152 && x<=168)
 	x+=dx;
 	if(x==168 && y>=72 && y<=88)
 	y+=dy;
-	if(y==88 && x<=168 && x>=120)
+	if(y==88 && x<=168 && x>=120){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==120 && y>=88 && y<=104)
 	y+=dy;
-	if(y==104 && x<=120 && x>=104)
+	if(y==104 && x<=120 && x>=104){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==104 && y>=104 && y<=136)
 	y+=dy;
 	if(y==136 && x>=104 && x<=120)
@@ -314,12 +357,22 @@ ctx.beginPath();
 	x+=dx;
 	if(x==136 && y>=168 && y<=184)
 	y+=dy;
-	if(y==184 && x<=136 && x>=120)
+	if(y==184 && x<=136 && x>=120){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==120 && y>=184 && y<=200)
 	y+=dy;
-	if(y==200 && x<=120 && x>=104)
+	if(y==200 && x<=120 && x>=104){
 	x-=dx;
+	if(n==2){
+		ctx.clearRect(x-7,y-7,20,20);
+		ctx.drawImage(ferrariMirrored, x-5, y-5, 17, 17);
+	}
+	}
 	if(x==104 && y>=200 && y<=232)
 	y+=dy;
 	if(y==232 && x>=104 && x<=120)
